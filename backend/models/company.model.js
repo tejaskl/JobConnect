@@ -19,10 +19,10 @@ const companySchema = new mongoose.Schema({
         
     },
     userId:{
-        type:mongoose.SchemaType.Types.ObjectId,
+        type:mongoose.Schema.Types.ObjectId,
         ref:'User',
         required:true
     }
 },{timestamps:true});
 
-export const Job = mongoose.model('Job', jobSchema);
+export const Company = mongoose.model('Company', companySchema);
